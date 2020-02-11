@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <!--<include layout="@layout/content_main" />-->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                android:padding="12dp"
+                android:src="@drawable/ic_back_arrow" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/backBtn"
+                android:src="@drawable/ic_user_place" />
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/ToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/userImage"
+                android:maxLines="1"
+                android:text="User Name" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/typing_area"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="2dp"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/chatText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/btn_send"
+            android:layout_weight="1"
+            android:background="@drawable/square_shap"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="Type Message"
+            android:lineSpacingExtra="5sp"
+            android:lineSpacingMultiplier="1"
+            android:maxHeight="80dp"
+            android:maxLines="5"
+            android:minHeight="50dp"
+            android:padding="10dp"
+            android:textCursorDrawable="@null" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="3dp"
+            android:src="@drawable/send_button" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/typing_area"
+        android:layout_below="@id/toolbar"
+        android:gravity="bottom">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/login_btn_color"
+        android:padding="5dp"
+        android:visibility="invisible" />
+
+    <!--<include
+        layout="@layout/empty_layout"
+        android:layout_above="@id/typing_area"
+        android:layout_below="@id/toolbar"
+        tools:ignore="IncludeLayoutParam" />-->
+
+
+</RelativeLayout>

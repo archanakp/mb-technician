@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_16"
+        android:fontFamily="@font/lato"
+        android:text="SORT BY"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_16">
+
+        <RadioButton
+            android:id="@+id/rb_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:checked="false"
+            android:drawablePadding="@dimen/dim_10"
+            android:fontFamily="@font/lato"
+            android:layoutDirection="rtl"
+            android:text="Best Match"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_sku_a_to_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dim_8"
+            android:checked="false"
+            android:drawablePadding="@dimen/dim_10"
+            android:fontFamily="@font/lato"
+            android:layoutDirection="rtl"
+            android:text="SKU (A to Z)"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_sku_z_to_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dim_8"
+            android:checked="false"
+            android:drawablePadding="@dimen/dim_10"
+            android:fontFamily="@font/lato"
+            android:layoutDirection="rtl"
+            android:text="SKU (Z to A)"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_brand_name_a_to_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dim_8"
+            android:checked="false"
+            android:drawablePadding="@dimen/dim_10"
+            android:fontFamily="@font/lato"
+            android:layoutDirection="rtl"
+            android:text="Brand Name (A to Z)"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_brand_name_z_to_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/dim_8"
+            android:checked="false"
+            android:drawablePadding="@dimen/dim_10"
+            android:fontFamily="@font/lato"
+            android:layoutDirection="rtl"
+            android:text="Brand Name (Z to A)"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

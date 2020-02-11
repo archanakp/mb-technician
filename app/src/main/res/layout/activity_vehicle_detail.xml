@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_16"
+    tools:context=".vehicle_module.vehicle.VehicleDetailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/insurance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_rounded_blue"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="@dimen/dim_40"
+                android:layout_marginTop="@dimen/dim_20"
+                android:src="@drawable/insurance_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginBottom="@dimen/dim_16"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="@string/insurance"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_rounded_blue"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="@dimen/dim_40"
+                android:layout_marginTop="@dimen/dim_20"
+                android:src="@drawable/service_history" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginBottom="@dimen/dim_16"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="@string/service"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/odometer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_rounded_blue"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="@dimen/dim_40"
+                android:layout_marginTop="@dimen/dim_20"
+                android:src="@drawable/odometer_reading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:layout_marginBottom="@dimen/dim_16"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="@string/odometer"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

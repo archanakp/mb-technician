@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16"
+        android:background="@color/light_grey_2"
+        android:padding="@dimen/dim_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_fill_white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="@dimen/dim_20"
+                android:layout_height="@dimen/dim_20"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_16"
+                android:layout_marginLeft="@dimen/dim_16"
+                app:srcCompat="@drawable/icon_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_54"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dim_16"
+                android:layout_marginLeft="@dimen/dim_16"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="Search"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/dark_grey"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_manually_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50"
+        android:layout_below="@+id/rl_search"
+        android:background="@color/light_grey_2"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dim_16"
+        android:paddingLeft="@dimen/dim_16"
+        android:text="Select Manually"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_manually_tag">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

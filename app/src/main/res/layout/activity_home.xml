@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_108"
+        android:background="@drawable/background_shape"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_16">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/dim_50"
+            android:layout_height="@dimen/dim_50"
+            android:src="@drawable/profile_pic"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_marginRight="@dimen/dim_16"
+            android:layout_toLeftOf="@+id/img_menu"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="@font/lato"
+            android:text="Sandeep Jangir"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_marginTop="@dimen/dim_3"
+            android:layout_marginRight="@dimen/dim_16"
+            android:layout_toLeftOf="@+id/img_menu"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="@font/lato"
+            android:text="sandep@techsbiz.com"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="@dimen/dim_24"
+            android:layout_height="@dimen/dim_24"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_menu" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_header"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_16">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/job_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_40"
+                        android:layout_height="@dimen/dim_40"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:src="@drawable/cirlcle_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:fontFamily="@font/lato"
+                        android:gravity="center"
+                        android:text="@string/job_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cash_in_hand_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dim_40"
+                        android:layout_height="@dimen/dim_40"
+                        android:src="@drawable/cirlcle_doller" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim_8"
+                        android:fontFamily="@font/lato"
+                        android:gravity="center"
+                        android:text="@string/cash_in_hand"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/expense_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/img_expense_module"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/expence_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/img_expense_module"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/expense_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inventory_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/img_inventory_module"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/inventory_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/img_inventory_module"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/inventory_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/vehicle_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/img_vehicle_module"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/vehicle_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/img_vehicle_module"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/vehicle_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/overtime_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/img_overtime_module"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/overtime_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/img_overtime_module"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/overtime_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/incentives_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/img_incentives_module"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/incentive_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/img_incentives_module"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/incentives_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sales_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/img_sales_module"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/sales_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/img_sales_module"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/sales_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_16"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:id="@+id/referrals_module"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/img_referrals_module"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/referral_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/img_referrals_module"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/referrals_module"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/msg_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim_8"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/bg_rounded_blue"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dim_16">
+
+
+                    <ImageView
+                        android:id="@+id/msg_img"
+                        android:layout_width="@dimen/dim_30"
+                        android:layout_height="@dimen/dim_30"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/referral_module" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dim_8"
+                        android:layout_marginTop="@dimen/dim_16"
+                        android:layout_marginBottom="@dimen/dim_16"
+                        android:layout_toRightOf="@+id/msg_img"
+                        android:fontFamily="@font/lato"
+                        android:text="@string/chat"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

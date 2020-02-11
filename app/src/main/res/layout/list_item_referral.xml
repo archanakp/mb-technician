@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dim_8"
+    android:layout_marginTop="@dimen/dim_8"
+    android:layout_marginRight="@dimen/dim_8"
+    android:layout_marginBottom="@dimen/dim_8"
+    android:clipChildren="true"
+    app:cardCornerRadius="@dimen/dim_4"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dim_16"
+        android:paddingTop="@dimen/dim_16"
+        android:paddingBottom="@dimen/dim_16">
+
+
+        <TextView
+            android:id="@+id/source_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim_16"
+            android:layout_toLeftOf="@+id/img_edit"
+            android:fontFamily="@font/lato"
+            android:text="Source"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/source_tag"
+            android:layout_marginRight="@dimen/dim_16"
+            android:layout_toLeftOf="@+id/img_edit"
+            android:fontFamily="@font/lato"
+            android:text="Friend"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="@dimen/dim_24"
+            android:layout_height="@dimen/dim_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dim_8"
+            android:layout_marginRight="@dimen/dim_16"
+            android:src="@drawable/icon_edit" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/source"
+            android:layout_marginTop="@dimen/dim_4"
+            android:background="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/name_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/source"
+            android:layout_marginTop="@dimen/dim_16"
+            android:fontFamily="@font/lato"
+            android:text="Contact Name"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_tag"
+            android:fontFamily="@font/lato"
+            android:text="Test name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="@dimen/dim_110"
+            android:layout_height="@dimen/dim_30"
+            android:layout_below="@+id/name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@drawable/background_errow_color_primary"
+            android:fontFamily="@font/lato"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="@dimen/dim_8"
+            android:paddingTop="@dimen/dim_2"
+            android:paddingRight="@dimen/dim_8"
+            android:paddingBottom="@dimen/dim_2"
+            android:text="18 Nov 2017"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="@dimen/dim_4"
+            android:background="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/number_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="@dimen/dim_16"
+            android:layout_marginRight="@dimen/dim_16"
+            android:layout_toLeftOf="@+id/date"
+            android:fontFamily="@font/lato"
+            android:text="Contact Number"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number_tag"
+            android:fontFamily="@font/lato"
+            android:layout_marginRight="@dimen/dim_16"
+            android:layout_toLeftOf="@+id/date"
+            android:text="1234567890"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

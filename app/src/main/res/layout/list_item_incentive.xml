@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dim_8"
+    android:layout_marginTop="@dimen/dim_4"
+    android:layout_marginRight="@dimen/dim_8"
+    android:layout_marginBottom="@dimen/dim_4"
+    android:background="@color/light_grey_4"
+    android:clipChildren="true"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_8">
+
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="@dimen/dim_50"
+            android:layout_height="@dimen/dim_50"
+            android:layout_centerVertical="true"
+            android:src="@drawable/reward" />
+
+        <TextView
+            android:id="@+id/receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_toLeftOf="@+id/status"
+            android:layout_toRightOf="@+id/img_status"
+            android:fontFamily="@font/lato"
+            android:text="Congratulation"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receipt"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_marginTop="@dimen/dim_4"
+            android:layout_toRightOf="@+id/img_status"
+            android:fontFamily="@font/lato"
+            android:text="You got 1250 incentive"
+            android:textColor="@color/light_orange"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status_text"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_toRightOf="@+id/img_status"
+            android:fontFamily="@font/lato"
+            android:text="2 Nov 2019"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

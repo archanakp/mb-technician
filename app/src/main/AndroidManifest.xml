@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.battmobile.battmobiletechnician">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <service
+            android:name=".notification.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".chat.ChatActivity"
+            android:theme="@style/NoActionTheme"></activity>
+        <activity android:name=".chat.MessageUserList"
+            android:theme="@style/NoActionTheme"/>
+        <activity android:name=".chat.ChatUserList" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cash_in_hand.CashInHandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overtime_module.overtime.OvertimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".expense_module.ExpenseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.SelectBrandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".expense_module.AddExpenseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".expense_module.EditExpenseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".job_module.JobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".job_module.CompletedJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".job_module.RescheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".job_module.JobDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cash_in_hand.CashTranferActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".job_module.ProcessJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".incentive_module.IncentivesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.vehicle.VehicleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.insurance.InsuranceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.insurance.AddInsuranceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.insurance.EditInsuranceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.service.ServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.service.AddServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.service.EditServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory_module.InventoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory_module.assigned_batteries.AssignedBatteryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".overtime_module.collection.CollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.odometer.OdometerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.odometer.AddOdometerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.odometer.EditOdometerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".referral.ReferralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".referral.AddReferralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".referral.EditReferralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".vehicle_module.vehicle.VehicleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sold_batteries.SoldBatteriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sold_batteries.AddSoldBatteriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory_module.scrap_batteries.ScrapBatteryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory_module.purchased_batteries.PurchasedBatteryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".job_module.AddScrapBatteryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory_module.purchased_batteries.AddPurchasedBatteryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".common.FullImageActivity" />
+
+
+    </application>
+
+</manifest>

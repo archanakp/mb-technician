@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dim_8"
+    android:layout_marginTop="@dimen/dim_8"
+    android:layout_marginRight="@dimen/dim_8"
+    android:layout_marginBottom="@dimen/dim_8"
+    android:clipChildren="true"
+    app:cardCornerRadius="@dimen/dim_4"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dim_16"
+        android:paddingTop="@dimen/dim_16"
+        android:paddingBottom="@dimen/dim_16">
+
+
+        <TextView
+            android:id="@+id/vehicle_no_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_toLeftOf="@+id/date"
+            android:fontFamily="@font/lato"
+            android:text="Vehicle Detail"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/vehicle_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicle_no_tag"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_toLeftOf="@+id/date"
+            android:fontFamily="@font/lato"
+            android:text="20 * 40"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="@dimen/dim_110"
+            android:layout_height="@dimen/dim_30"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background_errow_color_primary"
+            android:fontFamily="@font/lato"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="@dimen/dim_8"
+            android:paddingTop="@dimen/dim_2"
+            android:paddingRight="@dimen/dim_8"
+            android:paddingBottom="@dimen/dim_2"
+            android:text="18 Nov 2017"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/vehicle_no"
+            android:layout_marginTop="@dimen/dim_4"
+            android:background="@color/dark_grey" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/dim_36"
+            android:layout_below="@+id/vehicle_no"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/last_reading_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicle_no"
+            android:layout_marginTop="@dimen/dim_16"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_toLeftOf="@+id/view"
+            android:fontFamily="@font/lato"
+            android:text="Last Reading"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/last_reading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/last_reading_tag"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_toLeftOf="@+id/view"
+            android:fontFamily="@font/lato"
+            android:text="50"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/previous_reading_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicle_no"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_marginTop="@dimen/dim_16"
+            android:layout_toRightOf="@+id/view"
+            android:fontFamily="@font/lato"
+            android:text="Previous Reading"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/previous_reading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/previous_reading_tag"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_toRightOf="@+id/view"
+            android:fontFamily="@font/lato"
+            android:text="8000"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/last_reading"
+            android:layout_marginTop="@dimen/dim_4"
+            android:background="@color/dark_grey" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/dim_36"
+            android:layout_below="@+id/last_reading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_16"
+            android:background="@color/dark_grey" />
+
+        <TextView
+            android:id="@+id/service_date_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/last_reading"
+            android:layout_marginTop="@dimen/dim_16"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_toLeftOf="@+id/view1"
+            android:fontFamily="@font/lato"
+            android:text="Service Date"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/service_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_date_tag"
+            android:layout_marginRight="@dimen/dim_8"
+            android:layout_toLeftOf="@+id/view1"
+            android:fontFamily="@font/lato"
+            android:text="50"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/insurance_date_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/last_reading"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_marginTop="@dimen/dim_16"
+            android:layout_toRightOf="@+id/view1"
+            android:fontFamily="@font/lato"
+            android:text="Insurance Date"
+            android:textColor="@color/dark_grey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/insurance_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insurance_date_tag"
+            android:layout_marginLeft="@dimen/dim_16"
+            android:layout_toRightOf="@+id/view1"
+            android:fontFamily="@font/lato"
+            android:text="8000"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

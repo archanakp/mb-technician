@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:orientation="horizontal">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_user_place" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="12/10/2007"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:layout_toRightOf="@id/userImage"
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@id/userImage"
+        android:layout_toLeftOf="@id/date"
+        android:layout_alignBottom="@id/userImage"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userName"
+            style="@style/editText"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:text="User Name" />
+
+        <TextView
+            android:id="@+id/lastMessageTxt"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:ellipsize="end"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Last Message" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/black" />
+
+
+
+
+</RelativeLayout>

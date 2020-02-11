@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "743334311999",
+    "firebase_url": "https://battmobiletechnician.firebaseio.com",
+    "project_id": "battmobiletechnician",
+    "storage_bucket": "battmobiletechnician.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743334311999:android:0b39001fcc144ce284208a",
+        "android_client_info": {
+          "package_name": "com.battmobile.battmobiletechnician"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743334311999-attbt16o1f0ict6smh56d5foj9onn79v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.battmobile.battmobiletechnician",
+            "certificate_hash": "be81294bafb846b523363a2a4ea03380db5cb77e"
+          }
+        },
+        {
+          "client_id": "743334311999-7u2a56glphpbp580ju0rh80tsg5ti25v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY5XGpVYA5EFauqfK1ubvcUqtPMIA5vgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743334311999-7u2a56glphpbp580ju0rh80tsg5ti25v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

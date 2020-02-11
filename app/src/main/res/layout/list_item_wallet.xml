@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:padding="@dimen/dim_16">
+
+
+    <TextView
+        android:id="@+id/agent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="Reference Number"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:fontFamily="@font/lato"
+        android:id="@+id/tranferred_to_agent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agent_name"
+        android:layout_marginTop="@dimen/dim_2"
+        android:layout_marginRight="@dimen/dim_8"
+        android:layout_toLeftOf="@+id/amount"
+        android:text="Added to Wallet"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:fontFamily="@font/lato"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tranferred_to_agent"
+        android:layout_marginTop="@dimen/dim_4"
+        android:layout_marginRight="@dimen/dim_8"
+        android:layout_toLeftOf="@+id/status"
+        android:text="12Jul,2018"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:fontFamily="@font/lato"
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agent_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dim_4"
+        android:text="AED 23"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:fontFamily="@font/lato"
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tranferred_to_agent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dim_4"
+        android:text="Received"
+        android:textColor="@color/green"
+        android:textSize="12sp" />
+
+</RelativeLayout>

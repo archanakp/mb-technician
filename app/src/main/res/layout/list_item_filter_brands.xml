@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/dim_8"
+    android:layout_marginTop="@dimen/dim_8"
+    android:layout_marginRight="@dimen/dim_8"
+    android:background="@drawable/border_round_coner_rectangle"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dim_16"
+    android:paddingBottom="@dimen/dim_16">
+
+    <TextView
+        android:id="@+id/tv_sub_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dim_4"
+        android:layout_marginRight="@dimen/dim_4"
+        android:fontFamily="@font/lato"
+        android:gravity="center_horizontal"
+        android:text="Routine Service"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp" />
+
+</LinearLayout>
